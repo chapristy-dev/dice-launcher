@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice Launcher</title>
+        <script>
+            function set_form_defaults() {
+                document.forms.Number_of_dices.method = 'post';
+                document.forms.Number_of_dices.target = '_self';
+            }
+        </script>
+    </head>
+    <body onload="set_form_defaults();">
+        <h1> Select the number of dices </h1>
+        <p> Select the number of dices you want to launch : </p>
+        <!-- <script> var number_of_dices = prompt("Number of dices") </script> -->
+
+        <form name="Number_of_dices"> 
+            <label for="number_of_dices">Number of dices : </label>
+            <input type="number" name="number_of_dices" id="number_of_dices" /><br />
+
+            <button>Submit</button>
+        </form>
+
+        <h1> Select your type of dices </h1>
+
+        <form> 
+            <p> is the number of dice above 1 ? </p>  
+            <p> If yes are each dice the same ? Yes or No </p>
+            <p> for loops with the number of dices selected above so that we can choose each dice type </p>
+            
+            <label> Type of dices :
+                <input type="text" name="type_of_dice"> 
+            </label>
+        </form>
+
+        <h1> Launch the dices </h1>
+
+        <h1> See your results </h1>
+
+        <h1> Past launches </h1>
+
+    </body>
+</html>
